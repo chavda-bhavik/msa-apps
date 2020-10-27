@@ -1,0 +1,21 @@
+#!/bin/sh
+#deploy="false"
+deploy="true"
+
+image=ClientApplication
+version=1.0-SNAPSHOT
+latest=true
+
+#OPTIONS="--no-cache --force-rm"
+#OPTIONS="--no-cache"
+#OPTIONS="--force-rm"
+OPTIONS=""
+
+docker build ${OPTIONS} -t bhavik6187/${image}:1.0-SNAPSHOT .
+if [ "$?" -eq 0 ] && [ ${deploy} == "true" ]; then
+    docker push bhavik6187/${image}:1.0-SNAPSHOT
+    if [ "$latest" == "true" ]; then
+        docker tag bhavik6187/${image}:1.0-SNAPSHOT bhavik6187/${image}:latest
+        docker push bhavik6187/${image}:latest
+    fi
+fi

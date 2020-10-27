@@ -1,0 +1,9 @@
+com\mycompany\clientapplication\config\BootStrap.class
+servlets\RemoteServlet.class
+com\mycompany\clientapplication\service\ExampleService.class
+token\MPJWTToken.class
+token\GenerateToken.class
+com\mycompany\clientapplication\config\CrossOriginResourceSharingFilter.class
+client\RemoteRestClient.class
+com\mycompany\clientapplication\config\Producers.class
+com\mycompany\clientapplication\service\HealthCheckService.class

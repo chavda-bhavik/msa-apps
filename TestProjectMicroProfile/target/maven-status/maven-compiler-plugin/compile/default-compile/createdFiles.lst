@@ -1,0 +1,9 @@
+client\DemoClient.class
+client\DemoResource.class
+com\mycompany\testprojectmicroprofile\service\HealthCheckService.class
+com\mycompany\testprojectmicroprofile\config\CrossOriginResourceSharingFilter.class
+com\mycompany\testprojectmicroprofile\service\ExampleService.class
+client\ExampleClient.class
+servlets\Example.class
+com\mycompany\testprojectmicroprofile\config\BootStrap.class
+com\mycompany\testprojectmicroprofile\config\Producers.class

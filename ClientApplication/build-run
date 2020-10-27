@@ -1,0 +1,3 @@
+#!/bin/sh
+mvn clean package && docker build -t bhavik6187/ClientApplication .
+docker rm -f ClientApplication 2>/dev/null || true && docker run -it --name ClientApplication -p 8080:8080 -p 4848:4848 -p 8181:8181 --name ClientApplication bhavik6187/ClientApplication
